@@ -56,7 +56,7 @@ rel="stylesheet">
     <section class="hero">
         
 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-<button type="button" class="button">Заказать услугу</button>
+<button type="button" class="button" data-modal-open>Заказать услугу</button>
 
     </section>
     <!-- Премущества -->
@@ -111,15 +111,15 @@ rel="stylesheet">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="list work-img">
             <li class="item-work">
-                <img src="./images/box1.jpg" alt="Планшет и клавиатура на столе" width="370">
+                <img src="./images/box1.jpg" alt="Планшет и клавиатура на столе" width="370" class="work-pic">
             <span class="name-work">Десктопные приложения</span>
             </li>
             <li class="item-work">
-                <img src="./images/box2.jpg" alt="Ноутбук на столе" width="370">
+                <img src="./images/box2.jpg" alt="Ноутбук на столе" width="370"class="work-pic">
                 <span class="name-work">Мобильные приложения</span>
             </li>
             <li class="item-work">
-                <img src="./images/box3.jpg" alt="Планшет в руках" width="370">
+                <img src="./images/box3.jpg" alt="Планшет в руках" width="370"class="work-pic">
                 <span class="name-work">Дизайнерские решения</span>
             </li>
         </ul>
@@ -396,5 +396,18 @@ rel="stylesheet">
         </ul>
 </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+            <svg class="close-icon" aria-hidden="true">
+                <use href="./images/icons.svg#close-black">
+                </use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js">
+
+</script>
 </body>
 </html>
